@@ -1,0 +1,21 @@
+<RootLayout>:        # you need a root layout
+    WindowManager:   # that contains a ScreenManager
+        GameScreen:  # that manages the screens
+            # ChaseTheAce:ChaseTheAce  # you don't need this
+            name: "GameScreen"
+            GridLayout:
+                rows: 3
+                Image:
+                    id: cardimage
+                    source: app.cardimagefile #<<<<<<<<<<<<<<<<<<<
+                    allow_stretch: True
+                    on_source: print(self.source)
+                GridLayout:
+                    # dealer:deal  # you don't need this
+                    cols: 3
+
+                    Button:
+                        id: deal
+                        text: "Deal"
+                        on_release:
+                            app.deal()

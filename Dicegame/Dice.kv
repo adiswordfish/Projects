@@ -1,0 +1,24 @@
+<Roller>
+    image: imge
+    canvas.before:
+    Color: 
+        rgba: 0.5, 0.5, 0.5
+        orientation: 'horizontal'
+        padding: 75
+        spacing: 75
+    Label:
+        text: "Click on Button to roll dice"
+        pos: 200, 400
+    Button:
+        text:"Roll"
+        pos: (200,200)
+        size_hint: 1, 1
+        color: 0,0,0,1
+        on_press: root.rollit()
+    Image:
+        id: imge
+        # source: "dice-clipart-dice-faces-2.png"
+        pos: (500, 300)
+
+  
+        
